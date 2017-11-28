@@ -61,5 +61,3 @@ git复习命令笔记：
 	git branch:查看所有的分支
 	git merge 分支名：合并分支名的内容
 	git branch -d 分支名：删除分支
-
-	统统删了
