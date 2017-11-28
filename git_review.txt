@@ -54,4 +54,10 @@ git复习命令笔记：
 	把内容推送到远程，第一次提价加上-u，Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令
 	git clone  remoteUrl：从远程克隆
 
-	
+9、分支相关：
+	git checkout -b 分支名：创建分支并切换到该分支
+	git branch 分支名：创建分支并切换到该分支
+	git checkout 分支名：切换到该分支
+	git branch:查看所有的分支
+	git merge 分支名：合并分支名的内容
+	git branch -d 分支名：删除分支
