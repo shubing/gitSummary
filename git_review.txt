@@ -1,0 +1,49 @@
+﻿github SSH添加步骤：
+一：添加本地已有的ssh
+	1）：检查本地是否存在ssh：
+
+		通过命令 ls -al ~/.ssh 查看
+		
+	2）：复制ssh key：
+	
+		clip < ~/.ssh/名字.pub
+		
+	3）：在设置里面的SSH and GPG keys中添加key
+
+
+二：建一个新的ssh
+
+
+
+git复习命令笔记：
+
+1、创建版本库：
+	git init 创建版本库
+
+2、提交代码相关命令
+	git add fileName fileName fileName..... 
+	git commit -m "描述信息"
+	
+3、查看提交日志相关命令：
+	git log 查看提交日志
+	git log --pretty=oneline 单行查看提交日志
+	git reflog:查看所有的历史提交记录日志，以上两个命令只会显示当前版本以下的历史日志记录
+	
+4、git回退命令：
+	git reset:
+		git reset --hard HEAD^:回退到上一个版本
+		git reset --hard commitId:指定到相应commitId的版本
+		git reflog:查看历史提交记录日志
+		
+5、查看版本区别命令：
+	git diff:查看版本库中工作区和暂存区的区别
+	git diff HEAD -- fileName:查看某个文件工作区和版本库中最新版本的区别
+	
+6、撤销修改：
+	git checkout -- fileName：撤销工作区的修改，回到最近一次git commit和git add的状态
+	git reset HEAD fileName:撤销暂存区的内容，放回工作区
+	
+7、删除文件：
+	git rm fileName:删除fileName文件
+	git checkout -- fileName:如果fileName文件没有从版本库中删除，而是手动被删除，可以用该命令将文件从版本库中回复
+	
