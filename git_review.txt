@@ -62,4 +62,11 @@ git复习命令笔记：
 	git merge 分支名：合并分支名的内容
 	git branch -d 分支名：删除分支
 
-	还不中1000万
+10、bug分支：
+	git stash:将当前工作现场储藏起来
+	git stash list:查看储藏列表
+	git stash apply:恢复工作现场，但不会删除储藏内容
+	git stash apply stash的ID：恢复指定的储藏内容
+	git stash drop:删除储藏内容
+	git stash pop:恢复并且删除储藏内容
+
