@@ -81,4 +81,9 @@ git复习命令笔记：
 	git pull：从远程获取最新版本到本地并merge到本地，若有冲突先解决冲突
 	git checkout -b branch-name origin/branch-name:在本地创建和远程分支对应的分支
 	git branch --set-upstream branch-name origin/branch-name:建立本地分支和远程分支的关联
+	
+12、创建.gitignore文件
+		touch .gitignore:创建.gitignore文件
+		git add -f fileName:强制添加被忽略了的fileName文件
+		
 
