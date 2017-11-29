@@ -59,9 +59,11 @@ git复习命令笔记：
 	git branch 分支名：创建分支并切换到该分支
 	git checkout 分支名：切换到该分支
 	git branch:查看所有的分支
+	git branch -a:查看远程分支
 	git merge 分支名：合并分支名的内容
 	git branch -d 分支名：删除分支
 	git branch -D 分支名：强制删除分支
+	git push origin --delete branch-name:删除远程分支
 
 10、bug分支：
 	git stash:将当前工作现场储藏起来
@@ -70,4 +72,13 @@ git复习命令笔记：
 	git stash apply stash的ID：恢复指定的储藏内容
 	git stash drop:删除储藏内容
 	git stash pop:恢复并且删除储藏内容
+	
+11、多人远程协作：
+	git remote:查看远程库
+	git remote -v:查看详细的远程信息
+	git push origin 分支名：推送到远程
+	git fetch:从远程获取最新版本到本地，不自动merge
+	git pull：从远程获取最新版本到本地并merge到本地，若有冲突先解决冲突
+	git checkout -b branch-name origin/branch-name:在本地创建和远程分支对应的分支
+	git branch --set-upstream branch-name origin/branch-name:建立本地分支和远程分支的关联
 
