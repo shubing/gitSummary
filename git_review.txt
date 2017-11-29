@@ -79,6 +79,8 @@ git复习命令笔记：
 	git push origin 分支名：推送到远程
 	git fetch:从远程获取最新版本到本地，不自动merge
 	git pull：从远程获取最新版本到本地并merge到本地，若有冲突先解决冲突
+	git pull origin 分支名：获取某个分支的代码并合并
+	git fetch origin 分支名：获取某个分支的代码不合并
 	git checkout -b branch-name origin/branch-name:在本地创建和远程分支对应的分支
 	git branch --set-upstream branch-name origin/branch-name:建立本地分支和远程分支的关联
 	
